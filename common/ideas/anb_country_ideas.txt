@@ -2120,9 +2120,10 @@ F22_ideas = {
 		enemy_core_creation = 0.25
 		manpower_recovery_speed = 0.10
 	}
-	F22_popular_defense = {
-		hostile_attrition = 1
-	}
+	F22_pact_szal_harrumaz = {
+		global_heretic_missionary_strength = 0.02
+		warscore_cost_vs_other_religion = -0.10
+ 	}
 	F22_first_worshipers_of_sor_el = {
 		tolerance_own = 2
 	}
@@ -2211,10 +2212,6 @@ F24_ideas = {
 	F24_land_of_floating_gardens = {
 		development_cost = -0.15
 	}
-	# F24_for_the_sunset = {
-		# may_explore = yes
-		# colonists = 1
-	# }
 	F24_heart_of_the_world = {
 		global_trade_power = 0.1
 	}
@@ -3362,7 +3359,7 @@ Z35_ideas = {
 	free = yes
 	
 	Z35_lorentish_pioneers = {
-		colonists = 1
+		development_cost = -0.1
 	}
 	Z35_knights_rosande = {
 		cavalry_power = 0.2
@@ -3405,7 +3402,9 @@ Z36_ideas = {
 	free = yes
 	
 	Z36_a_future_above_ground = {
-		colonists = 1
+		global_prosperity_growth = 0.1
+		innovativeness_gain = 0.25
+
 	}
 	Z36_hammerhome_repeaters = {
 		fire_damage = 0.15
@@ -3426,6 +3425,9 @@ Z36_ideas = {
 	}
 	Z36_the_surface_highway = {	#becomes the railway
 		movement_speed = 0.15
+	}
+	Z36_regent_court_tolerance = {
+		tolerance_heretic = 2
 	}
 }
 
@@ -3654,11 +3656,11 @@ Z56_ideas = {
     free = yes        #will be added at load.
 
     Z56_the_persistent_kobold = { #Took a lot of will and determination to get here from the dragon coast, not gonna give up so easily.
-        land_morale = 0.15
+        land_morale = 0.1
     }
     Z56_legacy_of_naiax_the_seer = { #Religion founded by a great seer means a lot of oracles and divination, good at finding out secrets by means magical and mundane.
         #church_power_modifier = 0.25 # TO BE ADDED WHEN SERPENT CULT MECHANICS ARE IN
-		global_missionary_strength = 0.02 # TO BE REMOVED WHEN SERPENT CULT MECHANICS ARE IN 
+		global_missionary_strength = 0.01 # TO BE REMOVED WHEN SERPENT CULT MECHANICS ARE IN 
         spy_offence = 0.2
     }
     Z56_the_serpents_promised_land = { #We have been promised this land, and given a plan for it. Follow us and follow the Serpent, and find your place in it -- or don't, and find there's no place for you.
@@ -3673,7 +3675,7 @@ Z56_ideas = {
         advisor_cost = -0.10
     }
     Z56_the_grand_design = { #Having one vision and design for our economy lets us get the most out of our labor - things and people work where we want them to.
-        global_trade_goods_size_modifier = 0.10
+        production_efficiency = 0.10
     }
     Z56_heirs_to_the_dragons = { #We are making kobolds worthy of respect through our success. Truly we are the successors to the legacy of the mighty dragons!
         prestige = 1
@@ -3733,7 +3735,7 @@ B50_ideas = {
 	free = yes
 	
 	B50_the_new_small_country = {
-		colonists = 1
+		stability_cost_modifier = -0.15
 	}
 	B50_orcward_forts = {
 		fort_maintenance_modifier = -0.15
@@ -4076,7 +4078,7 @@ B53_ideas = {
 	free = yes
 	
 	B53_new_towns_initiative = {
-		colonists = 1
+		build_cost = -0.1
 	}
 	B53_nurcestiran_rite = {	#premier magical school for Escann actually
 		idea_cost = -0.1
@@ -4137,6 +4139,50 @@ B54_ideas = {
 	}
 	B54_elementary_magical_education_for_the_soldiery = {
 		discipline = 0.05
+	}
+}
+
+#Havoral Ideas
+B66_ideas = {
+	start = {
+		defensiveness = 0.20
+		diplomatic_reputation = 1
+	}
+	bonus = {
+		culture_conversion_cost = -0.15
+	}
+	trigger = {
+		tag = B66
+	}
+	free = yes
+	
+	B66_hard_as_havoral = {
+		shock_damage_received = -0.10
+	}
+	
+	B66_clans_of_the_mountain = {
+		global_manpower_modifier = 0.15
+	}
+	
+	B66_codes_of_havorton = {
+		global_autonomy = -0.025
+		global_unrest = -1
+	}
+	
+	B66_havoric_bident = {
+		legitimacy = 1
+	}
+	
+	B66_goatlords_of_havoral = {
+		production_efficiency = 0.10
+	}
+	
+	B66_the_riverlands = {
+		development_cost = -0.10
+	}
+	
+	B66_never_to_fall_again = {
+		land_morale = 0.10
 	}
 }
 
@@ -5316,7 +5362,7 @@ H39_ideas = {
 	
 	H39_conscript_runaway_slaves = {
 		global_manpower_modifier = 0.1
-		infantry_cost = -0.2
+		infantry_cost = -0.1
 	}
 	H39_vakar_ashgaran = {
 		hostile_attrition = 1
@@ -5329,10 +5375,10 @@ H39_ideas = {
 		num_accepted_cultures = 1
 	}
 	H39_free_plantations = {
-		development_cost = -0.3
+		development_cost = -0.1
 	}
 	H39_south_aelantiri_trade = {
-		global_trade_power = 0.2
+		global_trade_power = 0.1
 	}
 	H39_cult_of_bramash_the_liberator = {
 		stability_cost_modifier = -0.2
@@ -5731,8 +5777,8 @@ F47_ideas = {
 #Amldihr - Kronium Dwarf
 I01_ideas = {
 	start = {
-		development_cost = -0.1
-		culture_conversion_cost = -0.25
+		liberty_desire_from_subject_development = -0.25
+		promote_culture_cost = -0.25
 	}
 
 	bonus = {
@@ -5761,15 +5807,15 @@ I01_ideas = {
 		administrative_efficiency = 0.05
 	}
 	I01_amldvazhad_guard = {
-		discipline = 0.1
+		discipline = 0.05
 	}
 	I01_restructure_reforms = {
-		diplomatic_annexation_cost = -0.2
-		governing_capacity_modifier = 0.15
+		diplomatic_annexation_cost = -0.15
+		governing_capacity_modifier = 0.1
 	}
 	I01_rule_with_a_kronium_glove = {
 		global_unrest = -1
-		max_absolutism = 15
+		max_absolutism = 10
 	}
 }
 
@@ -6859,7 +6905,7 @@ I25_ideas = {
 	free = yes		#will be added at load.
 	
 	I45_the_grand_opening = {
-		global_institution_spread = 0.33
+		global_institution_spread = 0.25
 	}
 	I45_the_green_palace = {
 		legitimacy = 1
@@ -6867,21 +6913,21 @@ I25_ideas = {
 		republican_tradition = 0.3
 	}
 	I45_one_people_one_country = {
-		stability_cost_modifier = -0.25
+		stability_cost_modifier = -0.15
 	}
 	I45_between_branches_and_leaves = {
 		fire_damage = 0.15
 	}
 	I45_the_oak_gift = {
 		global_trade_goods_size_modifier = 0.1
-		supply_limit_modifier = 0.33
+		supply_limit_modifier = 0.25
 	}
 	I45_the_eyes_of_the_forest = {
 		spy_offence = 0.2
 		global_spy_defence = 0.2
 	}
 	I45_a_bow_in_every_home = {
-		infantry_fire = 0.25
+		infantry_fire = 0.1
 	}
 }
 
@@ -7526,7 +7572,7 @@ R43_ideas = {
     		core_creation = -0.15
   	}
   	R43_centralization_of_the_jungles = {
-    		local_autonomy = -0.05
+    		global_autonomy = -0.05
   	}
   	R43_the_vanrahar_idea = {
     		free_mil_policy = 1
@@ -7847,7 +7893,7 @@ R08_ideas = {
 #Vanrahar
 R77_ideas = {
 	start = {
-		land_morale = 0.15
+		land_morale = 0.2
 		leader_land_shock = 1
 	}
 
@@ -7863,7 +7909,7 @@ R77_ideas = {
 	free = yes		#will be added at load.
 	
 	R77_harimari_chargers = {
-		shock_damage = 0.15
+		shock_damage = 0.2
 	}
 	R77_tooth_and_claw = {
 		infantry_power = 0.15
@@ -7872,7 +7918,7 @@ R77_ideas = {
 		monarch_military_power = 1
 	}
 	R77_military_society = {
-		infantry_cost = -0.2
+		infantry_cost = -0.1
 	}
 	R77_a_warrior_nation = {
 		global_manpower_modifier = 0.15
@@ -8769,8 +8815,8 @@ B36_ideas = {
 #Asraport
 G90_ideas = {
 	start = {
-		interest = -1 #Bank of Asra
-		global_colonial_growth = 30 #Bank of Asra colony, dwarves hesitant to settle elsewhere
+		interest = -0.5 #Bank of Asra
+		global_colonial_growth = 15 #Bank of Asra colony, dwarves hesitant to settle elsewhere
 	}
 	bonus = {
 		navy_tradition = 1
@@ -8781,30 +8827,28 @@ G90_ideas = {
 	free = yes
 	
 	G90_aelantir_branch_of_bank_of_asra = { # Banking services gives us prime diplomatic position
-		improve_relation_modifier = 0.25
-		advisor_pool = 2
+		improve_relation_modifier = 0.15
+		advisor_pool = 1
 	}
 	G90_basalt_pillars = { # Island has basalt pillars, dwarves at home in environment and build a quasi-hold in the stone
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	G90_protected_harbour = { # Asraport harbor has unique system. trade done by pully system that brings goods out of ships onto the cliffside harbor
-		heavy_ship_power = 0.15
+		global_prov_trade_power_modifier = 0.1
 	}
 	G90_alloy_dwarves = { # Influx of dwarves from different holds, combination of cultures allows for better navigating
 		leader_naval_manuever = 1
-		global_sailors_modifier = 0.33
+		global_sailors_modifier = 0.2
 	}
 	G90_axes_and_jungles = { # Exploit jungles and forests for prime shipbuilding timber with expert dwarven axes
 		global_ship_cost = -0.15
-		allowed_marine_fraction = 0.2
 	}
 	G90_silver_city_of_the_ruin = { # Prime location for trade entering and exiting Ruinous Sea, Bank of Asra offers good loans to adventurers and traders
-		global_own_trade_power = 0.2
-		center_of_trade_upgrade_cost = -0.33
+		global_own_trade_power = 0.1
+		center_of_trade_upgrade_cost = -0.15
 	}
 	G90_bounty_posts = { # Ruinous Sea has become plagued with pirates and privateers, the Bank of Asra will rid it of these pirates with hired adventurers
 		mercenary_manpower = 0.25
-		mercenary_discipline = 0.1
 		adventurers_loyalty_modifier = 0.1
 	}
 }
@@ -9271,7 +9315,7 @@ H43_ideas = {
     }
 	H43_ghost_peppers = { # Much like how they burned the Death Cult out of the Cheshoshi, they burn out illness with their medicine shit (can't remember the name of this pepper should be named similar to that)
 		land_attrition = -0.15
-		monarch_lifespan = 1
+		monarch_lifespan = 0.05
     }
 	H43_the_place_of_the_fallen = { # Culturaly erasing the Cheshoshi, but also integrating them into Neratica
 		culture_conversion_cost = -0.15
@@ -9686,10 +9730,10 @@ H47_ideas = {
 		cavalry_power = 0.1
 	}
 	J07_riders_of_the_north = {
-		cavalry_shock = 0.25
+		cav_to_inf_ratio = 0.3
 	}
 	J07_city_of_refugees = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	J07_the_stained_castle = {
 		defensiveness = 0.1
@@ -11118,7 +11162,7 @@ larankar_ideas = {
     }
 	
     bonus = {
-        shock_damage = 0.20
+        shock_damage = 0.15
     }
 	
     trigger = {
@@ -11130,7 +11174,8 @@ larankar_ideas = {
        global_unrest = -2
     }
     larankar_larankarha_hill_horses = {
-        cavalry_power = 0.33
+        cavalry_power = 0.2
+		cav_to_inf_ratio = 0.25
     }    
     larankar_taming_the_taychend = {
         core_creation = -0.1
@@ -11145,7 +11190,7 @@ larankar_ideas = {
         army_tradition = 0.5
     }
     larankar_peace_through_war = {
-        war_exhaustion = -0.03
+        war_exhaustion = -0.02
     }        
 }
 
@@ -12024,11 +12069,11 @@ G38_ideas = {
 #Ynnic Empire
 H27_ideas = {
 	start = {
-		prestige = 1
-		discipline = 0.05
+		cavalry_cost = -0.20
+		reduced_liberty_desire = 10
 	}
 	bonus = {
-		state_governing_cost = -0.2
+		vassal_forcelimit_bonus = 1.0
 	}
 	trigger = {
 		OR = {
@@ -12038,28 +12083,29 @@ H27_ideas = {
 	free = yes
 
 	H27_first_elven_empire_of_this_era = {
-	    diplomatic_reputation = 1
-	    diplomatic_upkeep = 1
+		monthly_splendor = 1
+		legitimacy = 1.5
 	}
 	H27_great_works_of_imperial_architecture = {
-	    development_cost = -0.15
+		build_cost = -0.15
 	}
 	H27_champion_of_the_ynn = {
-		cavalry_power = 0.33
+		free_leader_pool = 1
+		cavalry_power = 0.1
 	}
 	H27_the_lessons_of_the_civil_wars = {
-	    land_maintenance_modifier = -0.1
+		movement_speed = 0.1
+		siege_ability = 0.1
 	}
 	H27_the_prayer_of_emperor_gamelirn = {
-		global_prosperity_growth = 0.34
-		free_policy = 1
+		global_missionary_strength = 0.01
+		diplomatic_annexation_cost = -0.1
 	}
 	H27_emperor_of_the_ynnics_and = {
-	    trade_efficiency = 0.15
+		num_accepted_cultures = 2
 	}
 	H27_three_forks_theorem = {	
-	    reform_progress_growth = 0.15
-	    innovativeness_gain = 0.5
+		free_policy = 1
 	}
 }
 
@@ -12474,7 +12520,7 @@ H37_ideas = {
 	}
 	
 	bonus = {
-		global_own_trade_power = 0.2
+		global_own_trade_power = 0.1
 	}
 	
 	trigger = {
@@ -12489,17 +12535,17 @@ H37_ideas = {
 	}
 	
 	H37_northern_marines = { #Many of the founders of Themaria were Themarennic marines
-		allowed_marine_fraction = 0.2
-		shock_damage_received = -0.1
+		allowed_marine_fraction = 0.1
+		shock_damage_received = -0.075
 	}
 	
 	H37_arctic_hospitality = { #People as cold and bitter as their homeland
-		war_exhaustion = -0.03
+		war_exhaustion = -0.02
 		stability_cost_modifier = -0.1
 	}
 	
 	H37_themarian_pasty = { #Warm pastry, ask T-Fool about them ig
-		global_supply_limit_modifier = 0.33
+		global_supply_limit_modifier = 0.15
 	}
 	
 	H37_land_of_critters = { #Plenty of small mammals to trap for furs
@@ -12511,7 +12557,7 @@ H37_ideas = {
 	}
 	
 	H37_settlers_from_the_reach = { #Immigrants from the Reach heading to Themaria, willing to fight for their new homes
-		land_morale = 0.15
+		land_morale = 0.1
 	}
 }
 
@@ -12519,7 +12565,7 @@ H37_ideas = {
 H65_ideas = {
 	start = {
 		movement_speed = 0.15
-		cavalry_power = 0.2
+		cav_to_inf_ratio = 0.3
 	}
 	
 	bonus = {
@@ -12534,8 +12580,8 @@ H65_ideas = {
 	free = yes
 	
 	H65_frontier_spirit = { #Yeehaw
-		land_attrition = -0.2
-		development_cost = -0.15
+		land_attrition = -0.1
+		may_recruit_female_generals = yes
 	}
 	
 	H65_tellum_express = { #Tellumtir Pony Express, transport messages across Aelantir, trusted with sensitive information 'Before you say anything, Tellum has a full 100% to both for the memes'
@@ -12544,12 +12590,12 @@ H65_ideas = {
 	}
 	
 	H65_tellumtir_rangers = { #Totally not Texas Rangers
-		cavalry_fire = 0.5
+		cavalry_fire = 0.2
+		cavalry_power = 0.1
 	}
 	
 	H65_the_lone_colt = { #The Lone Colt of Tellumtir is known across Aelantir, and Tellumtirans take intense pride in it
 		prestige = 1
-		may_recruit_female_generals = yes
 	}
 	
 	H65_the_tale_of_tellum_red = { #To the town of Mara Luar came a stranger one fine day
@@ -12561,7 +12607,7 @@ H65_ideas = {
 	}
 	
 	H65_bucks_firearms = { #Famed gun manufacturer from Tellumtir
-		fire_damage = 0.15
+		fire_damage = 0.1
 	}
 }
 
@@ -12621,7 +12667,7 @@ H53_ideas = {
 		same_culture_advisor_cost = -0.25
 	}
 	bonus = {
-		land_morale = 0.15
+		land_morale = 0.1
 	}
 	trigger = {
 		OR = {
@@ -12642,7 +12688,7 @@ H53_ideas = {
 		diplomatic_upkeep = 2
 	}
 	H53_soldiers_of_pelodir = { 
-		discipline = 0.05
+		vassal_forcelimit_bonus = 1.0
 	}
 	H53_the_most_prestigious_house = { 
 		prestige = 1
@@ -12652,7 +12698,6 @@ H53_ideas = {
 	}
 	H53_tithe_to_the_great = {	
 		vassal_income = 0.2
-		manpower_recovery_speed = 0.2
 	}
 }
 
@@ -12834,7 +12879,7 @@ H41_ideas = {
         navy_tradition = 1
     }
     H41_wood_runners = { #haha funny wood
-        local_production_efficiency = 0.075
+        production_efficiency = 0.075
     }
     H41_crimson_marines = { #if we sail to take back Sornc?st the first ones to land will be our marines
         movement_speed_onto_off_boat_modifier = 0.15
@@ -13617,8 +13662,8 @@ B42_ideas = {
 #Greatmarch
 A50_ideas = {
 	start = {
-		infantry_shock = 0.15
-		land_morale = 0.1
+		infantry_shock = 0.1
+		global_supply_limit_modifier = 0.15
 	}
 	
 	bonus = {
@@ -13650,7 +13695,7 @@ A50_ideas = {
 	}
 	
 	A50_alenic_howl = { #Battle cry of Old Alenics that sounds like wolves howling
-		monarch_military_power = 1
+		land_morale = 0.1
 		reserves_organisation = 0.33
 	}
 	
@@ -16619,7 +16664,7 @@ H04_ideas = {
 		global_prov_trade_power_modifier = 0.1
 	}
 	H04_hibiscine_champions = { #flowered noble knights famous for their love of herbal tea
-		cavalry_power = 0.33
+		cavalry_power = 0.2
 	}
 	H04_fields_of_elders = { #dead buried in the fields around the precursor relics, fields abloom with numerous flowers
 		development_cost = -0.1
@@ -16994,7 +17039,7 @@ Z97_ideas = {
 #Chippengard
 H59_ideas = {
 	start = { #Mercs from chipped tooth company, many half-orcs become mercenaries and the whole place is basically outer heaven
-		mercenary_discipline = 0.1
+		mercenary_manpower = 0.25 
 		adventurers_loyalty_modifier = 0.1
 	}
 
@@ -17011,18 +17056,18 @@ H59_ideas = {
 
 	H59_the_mercenary_god = { #Chippengard's half-orcs worship Dookan as a mercenary god.
 		tolerance_own = 1
-		church_power_modifier = 0.1
+		church_power_modifier = 0.05
 	}
 	H59_ynnic_contracts = { #Ynn is a great source of wealth for mercenaries, especially since Ynnics hold no prejudice to half-orcs like cannorians do.
-		land_maintenance_modifier = -0.1
-		improve_relation_modifier = 0.1
+		possible_condottieri = 1.0
+		improve_relation_modifier = 0.15
 	}
 	H59_the_teethbreaker = { #a type of beer made in Chippegard, known for causing immense amount of pain to the teeth if not drank quickly. Half-orcs commonly bet who can last longer with a mouth full of beer between each other.
 		prestige = 1
 	}
 	H59_anbenncoster_influence = { #Chipped Tooth Company was based in Anbenncost and many half-orcs were born there. Half-orcs built their cities in a similar style.
-		development_cost = -0.1
-		build_cost = -0.1
+		development_cost = -0.075
+		build_cost = -0.075
 	}
 	H59_common_bilingualism = { #half-orcs were the first settlers to become fluent in ynnic language as many of them lived among ruinborn as mercenaries
 		diplomats = 1
@@ -17032,18 +17077,18 @@ H59_ideas = {
 		female_advisor_chance = 0.25
 	}
 	H59_the_chargestoppers = { #In 1644, Chippengarder armies clashed with Sarda armies in Stenurynn. Despite being outnumbered and having just foot soldiers fight against Ynnic cavalry, the half-orcs won. This battle solidified their foot soldiers as the best in the region.
-		infantry_power = 0.15
+		infantry_power = 0.10
 	}
 }
 
 #Balgabar ideas
 G94_ideas = {
 	start = {
-        artillery_power = 0.15
+        artillery_power = 0.1
         tolerance_own = 1
 	}
 	bonus = {
-		infantry_fire = 0.2
+		caravan_power = 0.2
 	}
 	trigger = {
 		OR = {
@@ -17071,10 +17116,9 @@ G94_ideas = {
 	}
 	G94_the_godstone_hammer = {
         yearly_absolutism = 0.5
-        max_absolutism = 10
 	}
 	G94_the_panaelantir_railroad_company = {
-        movement_speed = 0.15
+        movement_speed = 0.1
 	}
 }
 
@@ -21714,7 +21758,7 @@ Y60_ideas = {
             production_efficiency = 0.1
     }
     
-    Y60_battle_of_xxx = { #Something about a battle with the command, in which a low ranking officer lead the army to victory after the death of a general
+    Y60_battle_of_phungoen = { #Something about a battle with the command, in which a low ranking officer lead the army to victory after the death of a general
         general_cost = -0.15
     }
     
