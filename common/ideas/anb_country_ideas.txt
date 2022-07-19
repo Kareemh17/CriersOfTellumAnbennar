@@ -16606,7 +16606,7 @@ H01_ideas = {
 #Elchos
 H04_ideas = {
 	start = {
-		land_morale = 0.1 #unwilling to surrender after successful goldtree rebellion
+		land_morale = 0.15 #unwilling to surrender after successful goldtree rebellion
 		diplomatic_reputation = 1 #contacts with foreign Eordan nobility
 	}
 	bonus = {
@@ -16618,7 +16618,7 @@ H04_ideas = {
 	free = yes
 	
 	H04_goldtree_rebellion = { #Goldtree Rebellion unified the realm against the Arakeprun clerics, Elchosi nobility class benefit greatly from system
-		war_exhaustion = -0.02
+		shock_damage = 0.1
 	}
 	H04_arrag_riverlands = { #Arrag river disputed, host to trade upriver and Precursor relics
 		global_prov_trade_power_modifier = 0.1
@@ -16630,11 +16630,11 @@ H04_ideas = {
 		development_cost = -0.1
 	}
 	H04_manaron_court_of_nobles = { #nobility of Eordand plot to overthrow status quo of seasonal clerics in famous building named after Manaron Goldtree
-		global_unrest = -1
+		global_unrest = -1.5
 		nobles_loyalty_modifier = 0.1
 	}
 	H04_aromatic_markets = { #Elchos famous for aromatic flowers and perfumed goods
-		trade_efficiency = 0.1
+		trade_efficiency = 0.15
 	}
 	HO4_tear_down_the_druids = { #the time of the seasonal clerics is over, they must be removed forever!
 		global_autonomy = -0.05
